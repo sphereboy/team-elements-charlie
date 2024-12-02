@@ -14,12 +14,12 @@ export const teamMembers: TeamMember[] = [
   {
     id: "2",
     name: "Michael Rodriguez",
-    role: "Product Manager",
+    role: "Project Manager",
     symbol: "Pm",
     atomicNumber: 2,
-    category: "Product",
+    category: "Management",
     email: "michael@company.com",
-    backgroundColor: "#fce7f3", // Light pink
+    backgroundColor: "#dcfce7", // Light green
   },
   {
     id: "3",
@@ -29,6 +29,6 @@ export const teamMembers: TeamMember[] = [
     atomicNumber: 3,
     category: "Design",
     email: "alex@company.com",
-    backgroundColor: "#dbeafe", // Light blue
+    backgroundColor: "#fce7f3", // Light pink
   },
 ];
