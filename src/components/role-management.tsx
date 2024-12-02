@@ -1,7 +1,7 @@
 "use client";
 
 import { useState } from "react";
-import { Role, roles as allRoles } from "@/data/roles";
+import { roles as allRoles } from "@/data/roles";
 import { Card, CardContent } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
