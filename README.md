@@ -1,36 +1,120 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Periodic Team Viewer 👥⚛️
 
-## Getting Started
+A modern, interactive team directory inspired by the Periodic Table of Elements. Built with Next.js 14 and TypeScript, this application provides a unique and engaging way to view and interact with your team members.
 
-First, run the development server:
+![Periodic Team Viewer Demo](./public/demo-screenshot.png)
+
+## ✨ Features
+
+- **Periodic Table Layout**: Team members displayed in a familiar periodic table grid
+- **Interactive Elements**: Click on team "elements" to view detailed information
+- **Responsive Design**: Seamlessly works across desktop and mobile devices
+- **Real-time Filtering**: Filter team members by department, role, or search terms
+- **Smooth Animations**: Engaging transitions and interactions powered by Framer Motion
+- **Server-Side Rendering**: Optimized performance with Next.js App Router
+
+## 🚀 Getting Started
+
+1. Clone the repository:
+
+```bash
+git clone https://github.com/yourusername/periodic-team-viewer.git
+cd periodic-team-viewer
+```
+
+2. Install dependencies:
+
+```bash
+npm install
+# or
+yarn install
+```
+
+3. Set up your environment variables:
+
+```bash
+cp .env.example .env.local
+```
+
+4. Start the development server:
 
 ```bash
 npm run dev
 # or
 yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Open [http://localhost:3000](http://localhost:3000) to view the application.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## 🛠️ Tech Stack
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+- **Framework**: [Next.js 14](https://nextjs.org/) with App Router
+- **Language**: [TypeScript](https://www.typescriptlang.org/)
+- **Styling**: Tailwind CSS
+- **Animations**: Framer Motion
+- **State Management**: React Context API
+- **Database**: MongoDB (optional)
+- **Authentication**: NextAuth.js (optional)
 
-## Learn More
+## 📁 Project Structure
 
-To learn more about Next.js, take a look at the following resources:
+```
+src/
+├── app/                 # Next.js App Router pages
+├── components/         # React components
+│   ├── action-bar.tsx  # Filtering and search controls
+│   ├── member-card.tsx # Individual team member card
+│   ├── team-grid.tsx   # Periodic table grid layout
+│   └── team-viewer.tsx # Main viewer component
+├── data/              # Team data and constants
+├── types/             # TypeScript type definitions
+└── utils/             # Utility functions
+```
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## 🎨 Customization
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+### Adding Team Members
 
-## Deploy on Vercel
+Edit `src/data/team.ts` to add or modify team members:
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+```typescript
+export const teamMembers: TeamMember[] = [
+  {
+    id: "1",
+    name: "John Doe",
+    role: "Software Engineer",
+    department: "Engineering",
+    symbol: "Jd",
+    atomicNumber: 1,
+    // ...
+  },
+  // ...
+];
+```
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+### Styling
+
+The application uses Tailwind CSS for styling. Customize the look and feel by modifying:
+
+- `tailwind.config.js` for theme configuration
+- Individual component styles using Tailwind classes
+
+## 📝 License
+
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+
+## 🤝 Contributing
+
+Contributions are welcome! Please feel free to submit a Pull Request.
+
+1. Fork the project
+2. Create your feature branch (`git checkout -b feature/AmazingFeature`)
+3. Commit your changes (`git commit -m 'Add some AmazingFeature'`)
+4. Push to the branch (`git push origin feature/AmazingFeature`)
+5. Open a Pull Request
+
+## 📧 Contact
+
+Your Name - [@jnprdsgn](https://x.com/jnprdsgn)
+
+Project Link: [https://github.com/sphereboy/team-elements-charlie](https://github.com/sphereboy/team-elements-charlie)
